@@ -1,0 +1,114 @@
+{
+    "delete_subword_backwards.sublime-macro": [
+        {
+            "args":
+            {
+                    "by": "subwords",
+                    "extend": true,
+                    "forward": false
+            },
+            "command": "move"
+        },
+        {
+            "args": null,
+            "command": "left_delete"
+        }
+    ],
+    "delete_subword_forwards.sublime-macro": [
+        {
+            "args":
+            {
+                    "by": "subword_ends",
+                    "extend": true,
+                    "forward": true
+            },
+            "command": "move"
+        },
+        {
+            "args": null,
+            "command": "left_delete"
+        }
+    ],
+    "insert-pdb.sublime-macro": [
+        {
+            "args":
+            {
+                "file": "res://Packages/Default/Add Line Before.sublime-macro"
+            },
+            "command": "run_macro_file"
+        },
+        {
+            "args":
+            {
+                "characters": "__import__"
+            },
+            "command": "insert"
+        },
+        {
+            "args":
+            {
+                "contents": "($0)"
+            },
+            "command": "insert_snippet"
+        },
+        {
+            "args":
+            {
+                "contents": "'$0'"
+            },
+            "command": "insert_snippet"
+        },
+        {
+            "args":
+            {
+                "characters": "pdb"
+            },
+            "command": "insert"
+        },
+        {
+            "args":
+            {
+                "by": "characters",
+                "forward": true
+            },
+            "command": "move"
+        },
+        {
+            "args":
+            {
+                "by": "characters",
+                "forward": true
+            },
+            "command": "move"
+        },
+        {
+            "args":
+            {
+                "characters": ".set_trace"
+            },
+            "command": "insert"
+        },
+        {
+            "args":
+            {
+                "contents": "($0)"
+            },
+            "command": "insert_snippet"
+        },
+        {
+            "args":
+            {
+                "by": "characters",
+                "forward": true
+            },
+            "command": "move"
+        },
+        {
+            "args":
+            {
+                "use_selection": false
+            },
+            "command": "black"
+        }
+]
+}

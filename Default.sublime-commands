@@ -1,0 +1,7 @@
+[
+	{ "caption": "Set Me Up: Keymap", "command": "overwrite_keymaps" },
+	{ "caption": "Set Me Up: Settings", "command": "overwrite_settings" },
+	{ "caption": "Set Me Up: Macros", "command": "install_custom_macros" },
+	{ "caption": "Set Me Up: Packages", "command": "install_custom_packages" },
+	{ "caption": "Set Me Up: Zsh", "command": "setup_zsh_functions" }
+]
